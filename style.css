@@ -170,7 +170,13 @@ body a:hover {
   width: 15vw;
   height: 15vw;
   margin: 15px;
-  box-shadow: 0 3px 6px #88888883;
+  box-shadow: 3px 3px 6px rgba(0,0,0, .3);
+}
+
+.thumbnail:hover {
+  width: 16vw;
+  height: 16vw;
+  transition: .2s;
 }
 
 .article:hover {
