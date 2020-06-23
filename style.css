@@ -70,12 +70,21 @@ body a:hover {
   margin: 0 15px;
 }
 
+.navlink a {
+  color: rgb(229, 226, 226);
+}
+
 .main {
   margin: 15px;
 }
 
 .intro-container {
   margin: 30px;
+}
+
+.note {
+  font-style: italic;
+  font-size: 18px;
 }
 
 .intro {
