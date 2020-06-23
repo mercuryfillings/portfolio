@@ -38,7 +38,9 @@ body {
   margin: 15px;
 }
 
-
+.intro-container {
+  margin: 15px;
+}
 
 .article {
   margin: 30px;
@@ -51,6 +53,11 @@ body {
 .project-name {
   font-size: 30px;
   margin: 15px 0;
+  color: rgb(87, 86, 86);
+}
+
+.languages {
+  color: rgb(122, 122, 122);
 }
 
 .hidden-container {
@@ -65,16 +72,22 @@ body {
   background-color: blue;
   justify-content: space-between;
   align-items: center;
+  margin: 15px;
 }
 
 .project-description {
   margin: 15px;
   width: 40vw;
+  line-height: 25px;
   background-color: pink;
+
 }
 
 .thumbnail-container {
+  display: flex;
+  justify-content: center;
   background-color: orange;
+  width: 40vw;
 }
 
 .thumbnail {
