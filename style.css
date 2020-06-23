@@ -6,11 +6,12 @@ body {
 .header {
   height: 70px;
   width: 100%;
-  border-bottom: 1px solid black;
-  border-color: black;
-  margin: 15px 0;
+  margin: 0 0 15px 0;
   display: flex;
   align-items: center;
+  box-shadow: 0 3px 6px #88888883;
+  padding: 15px;
+  max-width: 98vw;
 }
 
 .head-container {
@@ -21,6 +22,8 @@ body {
 .marquee {
   font-size: 40px;
   margin: 15px;
+  font-weight: 300;
+  color: rgb(87, 86, 86);
 }
 
 .subhead {
@@ -28,15 +31,21 @@ body {
   font-size: 20px;
   margin: 0 15px 15px 15px;
   font-weight: 200;
+  color: rgb(122, 122, 122);
 }
 
 .main {
   margin: 15px;
 }
 
+
+
 .article {
   margin: 30px;
+  padding: 25px;
   width: 45vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px #88888883;
 }
 
 .project-name {
@@ -44,6 +53,52 @@ body {
   margin: 15px 0;
 }
 
-.project-description {
-  margin: 15px 0;
+.hidden-container {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
 }
+
+.content-container {
+  display: flex;
+  width: 85vw;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-description {
+  margin: 15px;
+  width: 40vw;
+  background-color: pink;
+}
+
+.thumbnail-container {
+  background-color: orange;
+}
+
+.thumbnail {
+  width: 15vw;
+  height: 15vw;
+  border: dashed black 1px;
+  margin: 15px;
+}
+
+.article:hover {
+  width: 90vw;
+  transition: .2s;
+}
+
+.article:hover > .hidden-container {
+  width: 85vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  transition: .25s;
+}
+
+
+
+
+
+
