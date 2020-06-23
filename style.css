@@ -3,6 +3,17 @@ body {
   line-height: 20px;
 }
 
+body a {
+  text-decoration: none;
+  color: rgb(87, 86, 86);
+  font-size: 18px;
+}
+
+body a:hover {
+  font-size: 25px;
+  transition: .2s;
+}
+
 .header {
   height: 70px;
   width: 100%;
@@ -39,7 +50,18 @@ body {
 }
 
 .intro-container {
-  margin: 15px;
+  margin: 30px;
+  color: rgb(122, 122, 122);
+  line-height: 35px;
+}
+
+.work {
+  margin: 30px;
+  color: rgb(122, 122, 122);
+}
+
+.links {
+  line-height: 35px;
 }
 
 .article {
@@ -69,7 +91,6 @@ body {
 .content-container {
   display: flex;
   width: 85vw;
-  background-color: blue;
   justify-content: space-between;
   align-items: center;
   margin: 15px;
@@ -79,14 +100,12 @@ body {
   margin: 15px;
   width: 40vw;
   line-height: 25px;
-  background-color: pink;
-
+  color: rgb(122, 122, 122);
 }
 
 .thumbnail-container {
   display: flex;
   justify-content: center;
-  background-color: orange;
   width: 40vw;
 }
 
