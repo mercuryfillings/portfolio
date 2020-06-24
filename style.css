@@ -87,6 +87,16 @@ body a:hover {
   padding: 15px;
 }
 
+.bio-image {
+  height: 30vw;
+  width: 30vw;
+  margin: auto;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  box-shadow: 0 3px 6px #88888883;
+}
+
 .note {
   font-style: italic;
   font-size: 18px;
@@ -94,6 +104,10 @@ body a:hover {
 
 .about-main {
   height: 90vh;
+}
+
+.about-content-container {
+  display: flex;
 }
 
 .links-links {
