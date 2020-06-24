@@ -39,6 +39,10 @@ body a:hover {
   flex-direction: column;
 }
 
+.burg {
+  display: none;
+}
+
 .marquee {
   font-size: 40px;
   margin: 15px;
@@ -278,6 +282,56 @@ body a:hover {
   100% {opacity:1;}
   }
 
+
+@media(max-width: 414px) {
+  .marquee {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .subhead {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .burg {
+    display: block;
+    height: 10vw;
+    width: 15vw;
+  }
+  body {
+    background-size: 800%;
+    background-position: left;
+  }
+  .article {
+    margin: 30px 5px 30px 5px;
+    width: 85vw;
+  }
+  
+  .article:hover {
+    height: auto;
+    width: 85vw;
+    transition: .2s;
+  }
+  
+  .thumbnail {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .thumbnail-mobile {
+    height: 30vw;
+  }
+  
+  .content-container {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .project-description {
+    width: 80vw;
+  }
+}
 
 
 
