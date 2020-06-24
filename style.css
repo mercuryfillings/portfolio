@@ -3,7 +3,15 @@
 body {
   font-family: helvetica, sans-serif;
   line-height: 20px;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7) ), url('images/NYC.jpg');
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+
+body::after {
+  background-color: white;
+  opacity: 0.5;
+  z-index: 1;  
 }
 
 body a {
@@ -52,10 +60,6 @@ body a:hover {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   color: rgb(229, 226, 226);
-}
-
-.nav-container {
-
 }
 
 .nav {
@@ -119,7 +123,7 @@ body a:hover {
   width: 45vw;
   border-radius: 10px;
   box-shadow: 0 3px 6px #88888883;
-  background-color: rgb(65, 102, 224);
+  background-color: rgba(65, 102, 224, .8);
 }
 
 .project-name {
@@ -174,9 +178,24 @@ body a:hover {
 }
 
 .thumbnail:hover {
-  width: 16vw;
-  height: 16vw;
+  width: 20vw;
+  height: 20vw;
   transition: .2s;
+}
+
+.thumbnail-mobile {
+  height: 15vw;
+  width: auto;
+  margin: 15px;
+  box-shadow: 3px 3px 6px rgba(0,0,0, .3);
+  border-radius: 1vw;
+}
+
+.thumbnail-mobile:hover {
+  width: auto;
+  height: 20vw;
+  transition: .2s;
+  border-radius: 1.2vw;
 }
 
 .article:hover {
