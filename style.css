@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@200;300;400&family=Spectral:ital,wght@0,200;0,300;1,200&display=swap');
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: helvetica, sans-serif;
   line-height: 20px;
@@ -288,6 +293,7 @@ body a:hover {
 
 
 @media(max-width: 414px) {
+
   .marquee {
     font-size: 30px;
     line-height: 35px;
@@ -339,13 +345,25 @@ body a:hover {
   .burg-menu:target {
     outline: none;
     display: block;
-    animation: fadeIn ease 1s;
+    animation: dropIn ease forwards .2s;
+    transform: scale(2);
+    filter: blur(4px);
   }
   
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  @keyframes dropIn { 
+    to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
     }
+  }
+
+  .close {
+    font-size: 75px;
+    color: white;
+    position: relative;
+    top: 20px;
+  }
 
   .burg-link {
     width: auto;
@@ -355,7 +373,7 @@ body a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 47vw;
+    width: 107vw;
     height: 15vw;
     background-color: rgb(65, 102, 224);
     border-bottom: 2px solid white;
