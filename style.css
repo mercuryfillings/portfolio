@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@200;300;400&family=Spectral:ital,wght@0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@200;300;400&family=Spectral:ital,wght@0,200;0,300;1,200&display=swap');
 
 body {
   font-family: helvetica, sans-serif;
@@ -82,12 +82,32 @@ body a:hover {
 
 .about-intro-container {
   margin: 30px;
-  height: 90vh;
+  width: 50vw;
+  background-color: rgba(255,255,255, .5);
+  padding: 15px;
 }
 
 .note {
   font-style: italic;
   font-size: 18px;
+}
+
+.about-main {
+  height: 90vh;
+}
+
+.links-links {
+  font-family: 'Spectral', serif;
+  font-weight: 200;
+  color: rgb(122, 122, 122);
+  line-height: 35px;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.links-links:hover {
+  font-size: 35px;
+  transition: .2s;
 }
 
 .intro {
@@ -96,6 +116,11 @@ body a:hover {
   color: rgb(122, 122, 122);
   line-height: 35px;
   font-size: 25px;
+  margin: 10px 0;
+}
+
+.details {
+  font-style: italic;
 }
 
 .work {
