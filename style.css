@@ -8,12 +8,6 @@ body {
   background-size: 150%;
 }
 
-body::after {
-  background-color: white;
-  opacity: 0.5;
-  z-index: 1;  
-}
-
 body a {
   text-decoration: none;
   color: rgb(122, 122, 122);
@@ -84,6 +78,11 @@ body a:hover {
 
 .intro-container {
   margin: 30px;
+}
+
+.about-intro-container {
+  margin: 30px;
+  height: 90vh;
 }
 
 .note {
