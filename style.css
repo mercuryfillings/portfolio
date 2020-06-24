@@ -43,6 +43,10 @@ body a:hover {
   display: none;
 }
 
+.burg-menu {
+  display: none;
+}
+
 .marquee {
   font-size: 40px;
   margin: 15px;
@@ -288,21 +292,61 @@ body a:hover {
     font-size: 30px;
     line-height: 35px;
   }
+
   .subhead {
     display: none;
   }
+
   .nav {
     display: none;
   }
+
   .burg {
     display: block;
     height: 10vw;
     width: 15vw;
   }
+  
+  .burg:hover + .burg-menu {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: auto;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transition: .2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .burg-link {
+    width: auto;
+  }
+
+  .burg-nav-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47vw;
+    height: 15vw;
+    background-color: rgb(65, 102, 224);
+    border-bottom: 2px solid white;
+  }
+
+  .burg-nav-link {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+  }
+
   body {
     background-size: 800%;
     background-position: left;
   }
+
   .article {
     margin: 30px 5px 30px 5px;
     width: 85vw;
@@ -312,6 +356,10 @@ body a:hover {
     height: auto;
     width: 85vw;
     transition: .2s;
+  }
+
+  .main {
+    margin: 10px;
   }
   
   .thumbnail {
