@@ -294,6 +294,10 @@ body a:hover {
 
 @media(max-width: 414px) {
 
+  html { 
+    zoom: .96; 
+}
+
   .marquee {
     font-size: 30px;
     line-height: 35px;
