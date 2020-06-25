@@ -295,8 +295,8 @@ body a:hover {
 @media(max-width: 414px) {
 
   html { 
-    zoom: .96; 
-}
+    zoom: .95; 
+  } 
 
   .marquee {
     font-size: 30px;
@@ -319,20 +319,6 @@ body a:hover {
     height: 10vw;
     width: 15vw;
   }
-  
-  /* .burg-container:target + .burg-menu {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    height: auto;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
-    border-top: 2px solid white;
-    animation: slideIn ease 1s;
-    position: absolute;
-    top: 0;
-    right: 0;
-  } */
 
   .burg-menu {
     display: none;
@@ -364,7 +350,7 @@ body a:hover {
 
   .close {
     font-size: 75px;
-    color: white;
+    color: rgba(255,255,255.7);
     position: relative;
     top: 20px;
   }
@@ -393,6 +379,10 @@ body a:hover {
   body {
     background-size: 800%;
     background-position: left;
+  }
+
+  .about-body {
+    height: 1450px;
   }
 
   .article {
@@ -426,6 +416,19 @@ body a:hover {
 
   .project-description {
     width: 80vw;
+  }
+
+  .about-content-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-intro-container {
+    width: 82vw;
+  }
+
+  .bio-image {
+    width: 50vw;
+    height: 50vw;
   }
 }
 
