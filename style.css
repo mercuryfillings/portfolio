@@ -294,9 +294,9 @@ body a:hover {
 
 @media(max-width: 414px) {
 
-  html { 
+  /* html { 
     zoom: .95; 
-  } 
+  }  */
 
   .marquee {
     font-size: 30px;
